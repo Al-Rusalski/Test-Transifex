@@ -1,10 +1,8 @@
 [main]
 host = https://www.transifex.com
 
-[test2-228.transifex-yml]
-file_filter = ../../../../../aboba/<lang>.yml
-minimum_perc = 0
-source_file = .github/workflows/transifex.yml
+[github-actions-test.test_locales]
+file_filter = test_locales/<lang>.yml
+source_file = test_locales/en.yml
 source_lang = en
-type = YAML_GENERIC
-
+type = YML
