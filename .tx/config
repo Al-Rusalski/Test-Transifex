@@ -1,7 +1,7 @@
 [main]
 host = https://www.transifex.com
 
-[master.en_php]
+[Test-Transifex.test_locales]
 source_file = locale/en.php
 file_filter = locale/<lang>.php
 type = PHP
