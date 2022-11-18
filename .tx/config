@@ -2,8 +2,8 @@
 host = https://www.transifex.com
 
 [Test-Transifex.test_locales]
-source_file = locale/en.php
-file_filter = locale/<lang>.php
-type = PHP
+file_filter = test_locales/<lang>.yml
+source_file = test_locales/en.yml
 source_lang = en
+type = YML
 resource_name = info
