@@ -5,4 +5,5 @@ host = https://www.transifex.com
 source_file = locale/en.php
 file_filter = locale/<lang>.php
 type = PHP
+source_lang = en
 resource_name = info
