@@ -1,7 +1,7 @@
 [main]
 host = https://www.transifex.com
 
-[master.test_locales]
+[p:myproject:r:info]
 file_filter = test_locales/<lang>.yml
 source_file = test_locales/en.yml
 source_lang = en
