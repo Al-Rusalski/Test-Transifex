@@ -18,6 +18,7 @@ jobs:
       - name: "Pull from transifex and commit to the PR"
         with: # Or as an environment variable
             tx_token: ${{ secrets.TX_TOKEN }}
+            git_flow: true
             github_token: ${{ secrets.GITHUB_TOKEN }}
             translations_folder: /
             translations_folder: config/locale
