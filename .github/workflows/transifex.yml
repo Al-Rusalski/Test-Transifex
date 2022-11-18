@@ -18,11 +18,11 @@ jobs:
       - name: "Pull from transifex and commit to the PR"
         with: # Or as an environment variable
             tx_token: ${{ secrets.TX_TOKEN }}
-            git_flow: true
             github_token: ${{ secrets.GITHUB_TOKEN }}
             translations_folder: /
             translations_folder: config/locale
             pull_translations: true
             pull_sources: true
             commit_to_pr: true
+
         uses: docker://sergioisidoro/github-transifex-action:v0.2.0
