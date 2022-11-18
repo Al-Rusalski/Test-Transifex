@@ -16,11 +16,9 @@ jobs:
       - name: "Merge and push to transifex"
         with: # Or as an environment variable
             tx_token: ${{ secrets.TX_TOKEN }}
-            git_flow: true
-            github_token: ${{ secrets.GITHUB_TOKEN }}
             translations_folder: config/locale
-            pull_translations: true
-            pull_sources: true
-            push_translations: true
+            pull_translations: false
+            pull_sources: false
+            push_translations: false
             push_sources: true
         uses: docker://sergioisidoro/github-transifex-action:v0.2.0
