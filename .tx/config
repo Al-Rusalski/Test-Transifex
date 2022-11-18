@@ -1,8 +1,8 @@
 [main]
 host = https://www.transifex.com
 
-[p:master:r:info]
-file_filter = test_locales/<lang>.yml
-source_file = test_locales/en.yml
-source_lang = en
-type = YML
+[p:master:r:en_php]
+source_file = locale/en.php
+file_filter = locale/<lang>.php
+type = PHP
+resource_name = info
