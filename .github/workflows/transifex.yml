@@ -16,6 +16,8 @@ jobs:
       - name: "Merge and push to transifex"
         with: # Or as an environment variable
             tx_token: ${{ secrets.TX_TOKEN }}
+            git_flow: true
+            github_token: ${{ secrets.GITHUB_TOKEN }}
             translations_folder: config/locale
             pull_translations: false
             pull_sources: false
